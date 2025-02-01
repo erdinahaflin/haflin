@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffcccc;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: heartbeat 1s infinite;
+        }
+        .heart:before,
+        .heart:after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .heart:before {
+            top: -50px;
+            left: 0;
+        }
+        .heart:after {
+            left: 50px;
+            top: 0;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(0.2) rotate(-45deg); }
+            50% { transform: scale(0.5) rotate(-45deg); }
+            100% { transform: scale(0.2) rotate(-45deg); }
+        }
+    </style>
+</head>
+<body>
+    <marquee><h1 style="color:black;">&#x2764 STUDY WELL BABY &#x2764</h1></marquee>
+    <img src="cute gif.gif" alt="cutie" width="300">
+    <audio controls preload="auto">
+        <source src="bruno mars - it will rain (visualizer).mp3" type="audio/mpeg">
+    </audio>
+    <h1>YOU ARE THE BEST HUMAN IN THE WORLD</h1>
+    <div class="heart"></div>
+</body>
+</html>
